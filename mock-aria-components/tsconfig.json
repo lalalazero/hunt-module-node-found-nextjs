@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    // we can explicitly declare `any`, but we don't want to infer `any`
+    "noImplicitAny": false,
+    // maybe bump to 'esNext'?
+    "target": "es6",
+    // allows react jsx in tsx files
+    "jsx": "react",
+    // Eventually turn off, one we have no more assumed default exports.
+    // Allow default imports from modules with no default export.
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    // allows importing of json files, needed for locales as of right now
+    "resolveJsonModule": true,
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Process & infer types from .js files.
+    "allowJs": true,
+    // Don't emit; allow Babel to transform files.
+    "noEmit": true,
+    // Disallow features that require cross-file information for emit.
+    "isolatedModules": true,
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    // if 'target' is updated, this should be updated as well
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "skipLibCheck": false,
+    "strict": false,
+    // "plugins": [
+    //   {
+    //     "name": "typescript-strict-plugin",
+    //     "paths": [
+    //       // "./packages/@react-aria/a",
+    //       // "./packages/@react-aria/b",
+    //       // "./packages/@react-aria/l",
+    //       // "./packages/@react-spectrum/a",
+    //       // "./packages/@react-spectrum/b",
+    //       // "./packages/@react-spectrum/color",
+    //       // "./packages/@react-spectrum/checkbox",
+    //       // "./packages/@react-spectrum/divider",
+    //       // "./packages/@react-spectrum/icon",
+    //       // "./packages/@react-spectrum/illustratedmessage",
+    //       // "./packages/@react-spectrum/image",
+    //       // "./packages/@react-spectrum/meter",
+    //       // "./packages/@react-spectrum/statuslight",
+    //       // "./packages/@react-spectrum/text",
+    //       // "./packages/@react-spectrum/view",
+    //       // "./packages/@react-spectrum/well",
+    //       // "./packages/@react-stately/utils",
+    //       // "./packages/@react-types/a",
+    //       // "./packages/@react-types/b",
+    //       // "./packages/@react-types/checkbox",
+    //       // "./packages/@react-types/color",
+    //       // "./packages/@react-types/divider",
+    //       // "./packages/@react-types/illustratedmessage",
+    //       // "./packages/@react-types/image",
+    //       // "./packages/@react-types/meter",
+    //       // "./packages/@react-types/shared",
+    //       // "./packages/@react-types/statuslight",
+    //       // "./packages/@react-types/text",
+    //       // "./packages/@react-types/view",
+    //       // "./packages/@react-types/well",
+    //       // "./packages/react-aria-components"
+    //     ]
+    //   }
+    // ]
+  },
+  "include": [
+    "src",
+    "index.ts"
+  ],
+  "exclude": [
+    "**/node_modules"
+  ]
+}
